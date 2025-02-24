@@ -1,0 +1,14 @@
+layout {
+  pane split_direction="vertical" {
+        pane command="cd ~/nix/log-processor;  nix run .#zkRunner --experimental-features 'nix-command flakes'"
+        pane command="cd ~/nix/log-processor;  nix run .#cassandra-1 --experimental-features 'nix-command flakes'"
+        pane command="cd ~/nix/log-processor; sleep 30 ; nix run .#kafka-1 --experimental-features 'nix-command flakes'"
+        pane command="cd ~/nix/log-processor; sleep 30 ; nix run .#kafka-2 --experimental-features 'nix-command flakes'"
+    }
+  pane split_direction="vertical" {
+        pane command="cd ~/nix/log-processor; sleep 60 ; nix run .#createCQLTable --extra-experimental-features 'nix-command flakes'; cqlsh"
+        pane command="cd ~/nix/sdk-sessionizer"
+        pane command="cd ~/nix/euler-sessionizer"
+    }
+  pane command="cd ~"
+}
