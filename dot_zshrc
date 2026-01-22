@@ -64,9 +64,7 @@ eval "$(zoxide init zsh)"
 #export ANTHROPIC_MODEL='gemini-2.5-pro'
 #export ANTHROPIC_SMALL_FAST_MODEL='gemini-2.5-pro'
 #export ANTHROPIC_BASE_URL=https://grid.ai.juspay.net/
-#export ANTHROPIC_AUTH_TOKEN="sk-FsADenmYUCiQyzOpTmPtQg"
 #export CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1
-export JUSPAY_API_KEY="sk-FsADenmYUCiQyzOpTmPtQg"
 
 function jclaude() {
     MODEL=$(curl -X GET \
