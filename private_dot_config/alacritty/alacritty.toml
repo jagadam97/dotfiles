@@ -13,7 +13,7 @@ TERM = "xterm-256color"
 
 [font]
 # Font size in points.
-size = 14.0
+size = 12.0
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
@@ -58,8 +58,8 @@ foreground = "0xebdbb2"
 [window]
 opacity = 0.85
 blur = true
-decorations = "Buttonless"
-startup_mode = "Fullscreen"
+# decorations = "Buttonless"
+# startup_mode = "Fullscreen"
 dynamic_title = true
 option_as_alt = "Both"
 
