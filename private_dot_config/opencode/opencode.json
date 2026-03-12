@@ -1,0 +1,40 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "litellm": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "LiteLLM",
+      "options": {
+        "baseURL": "https://grid.ai.juspay.net/"
+      },
+      "models": {
+        "glm-latest": {
+          "name": "glm-latest"
+        },
+        "kimi-latest": {
+          "name": "kimi-latest"
+        },
+        "open-large": {
+          "name": "open-large"
+        }
+      }
+    }
+  },
+  "mcp": {
+    "sequential-thinking": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "enabled": true
+    },
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "enabled": true
+    },
+    "filesystem": {
+      "type": "local",
+      "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "/Users/dinesh.reddy"],
+      "enabled": true
+    }
+  }
+}
