@@ -50,7 +50,7 @@ foreground = "0xebdbb2"
 #white   = "0xebdbb2"
 
 [window]
-opacity = 0.85
+opacity = 0.70
 blur = true
 # decorations = "Buttonless"
 # startup_mode = "Fullscreen"
