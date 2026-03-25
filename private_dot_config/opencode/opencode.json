@@ -8,14 +8,148 @@
         "baseURL": "https://grid.ai.juspay.net/"
       },
       "models": {
+        "open-large": {
+          "name": "open-large",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 202752,
+            "output": 32000
+          }
+        },
+        "open-fast": {
+          "name": "open-fast",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 196000,
+            "output": 32000
+          }
+        },
+        "open-vision": {
+          "name": "open-vision",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 262144,
+            "output": 32000
+          }
+        },
+        "claude-opus-4-5": {
+          "name": "claude-opus-4-5",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 1000000,
+            "output": 128000
+          }
+        },
+        "claude-opus-4-6": {
+          "name": "claude-opus-4-6",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 1000000,
+            "output": 128000
+          }
+        },
+        "claude-sonnet-4-6": {
+          "name": "claude-sonnet-4-6",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 200000,
+            "output": 64000
+          }
+        },
+        "claude-sonnet-4-5": {
+          "name": "claude-sonnet-4-5",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 200000,
+            "output": 32000
+          }
+        },
+        "glm-flash-experimental": {
+          "name": "glm-flash-experimental",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 262144,
+            "output": 32000
+          }
+        },
+        "gemini-3-pro-preview": {
+          "name": "gemini-3-pro-preview",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 65535
+          }
+        },
+        "gemini-3-flash-preview": {
+          "name": "gemini-3-flash-preview",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 65535
+          }
+        },
+        "minimax-m2": {
+          "name": "minimax-m2",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 202752,
+            "output": 32000
+          }
+        },
         "glm-latest": {
-          "name": "glm-latest"
+          "name": "glm-latest",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 202752,
+            "output": 32000
+          }
         },
         "kimi-latest": {
-          "name": "kimi-latest"
-        },
-        "open-large": {
-          "name": "open-large"
+          "name": "kimi-latest",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "limit": {
+            "context": 262000,
+            "output": 32000
+          }
         }
       }
     }
@@ -34,6 +168,29 @@
     "filesystem": {
       "type": "local",
       "command": ["npx", "-y", "@modelcontextprotocol/server-filesystem", "/Users/dinesh.reddy"],
+      "enabled": true
+    },
+    "nixos": {
+      "type": "local",
+      "command": ["uvx", "mcp-nixos"],
+      "enabled": true
+    },
+    "notion": {
+      "type": "local",
+      "command": ["npx", "-y", "@notionhq/notion-mcp-server"],
+      "environment": {
+        "OPENAPI_MCP_HEADERS": "{\"Authorization\": \"Bearer ${NOTION_API_KEY}\", \"Notion-Version\": \"2022-06-28\"}"
+      },
+      "enabled": true
+    },
+    "bitbucket": {
+      "type": "local",
+      "command": ["npx", "-y", "@nexus2520/bitbucket-mcp-server"],
+      "environment": {
+        "BITBUCKET_BASE_URL": "https://bitbucket.juspay.net",
+        "BITBUCKET_USERNAME": "dinesh.reddy@juspay.in",
+        "BITBUCKET_TOKEN": "${BITBUCKET_TOKEN}"
+      },
       "enabled": true
     }
   }
