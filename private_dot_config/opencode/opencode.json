@@ -193,5 +193,6 @@
       },
       "enabled": true
     }
-  }
+  },
+  "lsp": false
 }
