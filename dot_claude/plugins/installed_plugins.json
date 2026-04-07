@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "plugins": {
+    "oh-my-claudecode@omc": [
+      {
+        "scope": "user",
+        "installPath": "/Users/dinesh.reddy/.claude/plugins/cache/omc/oh-my-claudecode/4.11.0",
+        "version": "4.11.0",
+        "installedAt": "2026-04-07T11:40:21.196Z",
+        "lastUpdated": "2026-04-07T11:40:21.196Z",
+        "gitCommitSha": "feaddbfc52b27693225cc3fc56ee69665b7927a3"
+      }
+    ]
+  }
+}

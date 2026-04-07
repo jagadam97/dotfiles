@@ -1,0 +1,10 @@
+{
+  "omc": {
+    "source": {
+      "source": "git",
+      "url": "https://github.com/Yeachan-Heo/oh-my-claudecode.git"
+    },
+    "installLocation": "/Users/dinesh.reddy/.claude/plugins/marketplaces/omc",
+    "lastUpdated": "2026-04-07T11:40:09.249Z"
+  }
+}
