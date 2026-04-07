@@ -1,0 +1,59 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude mcp:*)"
+    ]
+  },
+  "outputStyle": "Explanatory",
+  "spinnerTipsEnabled": false,
+  "prefersReducedMotion": false,
+  "mcpServers": {
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "context7": {
+      "type": "url",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "{{ .chezmoi.homeDir }}"
+      ]
+    },
+    "nixos": {
+      "command": "uvx",
+      "args": [
+        "mcp-nixos"
+      ]
+    },
+    "notion": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@notionhq/notion-mcp-server"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "{\"Authorization\": \"Bearer {{ env "NOTION_API_KEY" }}\", \"Notion-Version\": \"2022-06-28\"}"
+      }
+    },
+    "bitbucket": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@nexus2520/bitbucket-mcp-server"
+      ],
+      "env": {
+        "BITBUCKET_BASE_URL": "https://bitbucket.juspay.net",
+        "BITBUCKET_USERNAME": "dinesh.reddy@juspay.in",
+        "BITBUCKET_TOKEN": "${BITBUCKET_TOKEN}"
+      }
+    }
+  }
+}
