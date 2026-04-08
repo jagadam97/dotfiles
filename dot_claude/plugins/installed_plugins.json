@@ -10,6 +10,86 @@
         "lastUpdated": "2026-04-07T11:40:21.196Z",
         "gitCommitSha": "feaddbfc52b27693225cc3fc56ee69665b7927a3"
       }
+    ],
+    "superpowers@superpowers-dev": [
+      {
+        "scope": "user",
+        "installPath": "/Users/dinesh.reddy/.claude/plugins/cache/superpowers-dev/superpowers/5.0.7",
+        "version": "5.0.7",
+        "installedAt": "2026-04-07T19:30:17.751Z",
+        "lastUpdated": "2026-04-07T19:30:17.751Z",
+        "gitCommitSha": "917e5f53b16b115b70a3a355ed5f4993b9f8b73d"
+      }
+    ],
+    "frontend-design@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/dinesh.reddy/.claude/plugins/cache/claude-plugins-official/frontend-design/unknown",
+        "version": "unknown",
+        "installedAt": "2026-04-07T19:34:42.468Z",
+        "lastUpdated": "2026-04-07T19:35:55.236Z",
+        "gitCommitSha": "104d39be10b7b1380b2ae23a387a11a297b599c3"
+      }
+    ],
+    "code-review@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/dinesh.reddy/.claude/plugins/cache/claude-plugins-official/code-review/unknown",
+        "version": "unknown",
+        "installedAt": "2026-04-07T19:34:43.018Z",
+        "lastUpdated": "2026-04-07T19:35:55.223Z",
+        "gitCommitSha": "104d39be10b7b1380b2ae23a387a11a297b599c3"
+      }
+    ],
+    "code-simplifier@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/dinesh.reddy/.claude/plugins/cache/claude-plugins-official/code-simplifier/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-04-07T19:34:43.614Z",
+        "lastUpdated": "2026-04-07T19:34:43.614Z",
+        "gitCommitSha": "104d39be10b7b1380b2ae23a387a11a297b599c3"
+      }
+    ],
+    "feature-dev@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/dinesh.reddy/.claude/plugins/cache/claude-plugins-official/feature-dev/unknown",
+        "version": "unknown",
+        "installedAt": "2026-04-07T19:34:44.160Z",
+        "lastUpdated": "2026-04-07T19:35:55.245Z",
+        "gitCommitSha": "104d39be10b7b1380b2ae23a387a11a297b599c3"
+      }
+    ],
+    "playwright@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/dinesh.reddy/.claude/plugins/cache/claude-plugins-official/playwright/unknown",
+        "version": "unknown",
+        "installedAt": "2026-04-07T19:34:44.695Z",
+        "lastUpdated": "2026-04-07T19:35:55.215Z",
+        "gitCommitSha": "104d39be10b7b1380b2ae23a387a11a297b599c3"
+      }
+    ],
+    "ralph-loop@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/dinesh.reddy/.claude/plugins/cache/claude-plugins-official/ralph-loop/1.0.0",
+        "version": "1.0.0",
+        "installedAt": "2026-04-07T19:34:45.273Z",
+        "lastUpdated": "2026-04-07T19:34:45.273Z",
+        "gitCommitSha": "104d39be10b7b1380b2ae23a387a11a297b599c3"
+      }
+    ],
+    "remember@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "/Users/dinesh.reddy/.claude/plugins/cache/claude-plugins-official/remember/0.1.0",
+        "version": "0.1.0",
+        "installedAt": "2026-04-07T19:34:48.039Z",
+        "lastUpdated": "2026-04-07T19:34:48.039Z",
+        "gitCommitSha": "779ab61d8d412230eeec1840b8ca104bebea4358"
+      }
     ]
   }
 }

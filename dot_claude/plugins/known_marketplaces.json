@@ -6,5 +6,29 @@
     },
     "installLocation": "/Users/dinesh.reddy/.claude/plugins/marketplaces/omc",
     "lastUpdated": "2026-04-07T11:40:09.249Z"
+  },
+  "superpowers-dev": {
+    "source": {
+      "source": "git",
+      "url": "https://github.com/obra/superpowers.git"
+    },
+    "installLocation": "/Users/dinesh.reddy/.claude/plugins/marketplaces/superpowers-dev",
+    "lastUpdated": "2026-04-07T19:30:12.020Z"
+  },
+  "claude-plugins-official": {
+    "source": {
+      "source": "git",
+      "url": "https://github.com/anthropics/claude-plugins-official.git"
+    },
+    "installLocation": "/Users/dinesh.reddy/.claude/plugins/marketplaces/claude-plugins-official",
+    "lastUpdated": "2026-04-08T06:32:11.192Z"
+  },
+  "claude-community": {
+    "source": {
+      "source": "git",
+      "url": "https://github.com/anthropics/claude-plugins-community.git"
+    },
+    "installLocation": "/Users/dinesh.reddy/.claude/plugins/marketplaces/claude-community",
+    "lastUpdated": "2026-04-07T19:34:35.787Z"
   }
 }
