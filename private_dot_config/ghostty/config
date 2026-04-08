@@ -15,7 +15,7 @@ background-blur-radius = 8
 macos-option-as-alt = true
 
 # ── Scrollback ──────────────────────────────────────────────
-scrollback-limit = 10000
+scrollback-limit = 100000000
 
 # ── Clipboard (OSC 52) ─────────────────────────────────────
 clipboard-read = allow
