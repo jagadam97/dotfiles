@@ -32,6 +32,12 @@ font-size = 14
 font-thicken = true
 font-family = JetBrainsMono Nerd
 
+# ── Cell width (fixes p10k / zsh-autosuggest drift on SSH) ──
+# Ghostty defaults to `unicode` grapheme width which disagrees
+# with wcwidth() on Nerd Font PUA glyphs, causing cursor drift
+# while typing. Alacritty uses legacy/wcwidth — match it.
+grapheme-width-method = legacy
+
 # ── Window ──────────────────────────────────────────────────
 background-opacity = 0.92
 background-blur-radius = 8
