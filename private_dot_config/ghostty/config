@@ -3,11 +3,7 @@
 
 # ── Font ────────────────────────────────────────────────────
 font-family = JetBrainsMono Nerd Font
-font-size = 12
-font-style = Medium
-font-style-bold = Heavy
-font-style-italic = Medium Italic
-font-style-bold-italic = Heavy Italic
+font-size = 14
 
 # ── Window ──────────────────────────────────────────────────
 background-opacity = 0.92
